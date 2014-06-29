@@ -7,7 +7,7 @@ public class Orientandos extends Controller {
 	
 	
 	public static Result cadastrar() {				
-		return ok(views.html.orientandos.render());
+		return ok(views.html.app.orientandos.render());
 	}
 
 }

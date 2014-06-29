@@ -9,5 +9,18 @@ GET     /                           controllers.Application.index()
 GET		/orientandos/cadastrar		controllers.Orientandos.cadastrar()
 GET		/orientacoes/cadastrar		controllers.Orientacoes.cadastrar()
 
+
+GET		/acessar					controllers.Login.acessar()
+GET		/registrar					controllers.Login.registrar()
+GET		/sair						controllers.Login.sair()
+GET		/perfil						controllers.Login.perfil()
+
+POST	/acessarUsuario				controllers.Login.acessarUsuario()
+POST	/registrarUsuario			controllers.Login.registrarUsuario()
+
+
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+
