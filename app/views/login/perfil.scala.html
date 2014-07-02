@@ -1,4 +1,7 @@
+@(usuario: Usuario)
+
 @base("Sistema par acompanhamento de orientacoes") {
 
-	<h1>Meu perfil</h1> 
+	<h1>@usuario.nome</h1>
+	<h2>@usuario.email</h2> 
 }
