@@ -6,8 +6,8 @@
 GET     /                           controllers.Application.index()
 
 # Menus
-GET		/orientandos/cadastrar		controllers.Orientandos.cadastrar()
-GET		/orientacoes/cadastrar		controllers.Orientacoes.cadastrar()
+GET		/orientandos/index	    	controllers.Orientandos.index()
+GET		/orientacoes/index  		controllers.Orientacoes.index()
 
 
 GET		/acessar					controllers.Login.acessar()
