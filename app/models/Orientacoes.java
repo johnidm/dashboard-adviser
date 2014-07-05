@@ -19,10 +19,12 @@ public class Orientacoes extends Model {
 	@GeneratedValue
 	public Long id;
 	
-	@Required
-	@Column(length=30)
+	@Required(message="É necessário informar a descrição")
+	@Column(length=80)
 	public String descricao;
 	
+	@Required(message="É necessário informar uma observação")
+	// valdiar quantidade minima de caractres
 	@Column(length=1000)
 	public String observacao;
 

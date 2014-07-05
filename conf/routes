@@ -9,6 +9,12 @@ GET     /                           controllers.Application.index()
 GET		/orientandos/index	    	controllers.Orientandos.index()
 GET		/orientacoes/index  		controllers.Orientacoes.index()
 
+POST	/orientandos/salvar			controllers.Orientacoes.salvar()
+POST	/orientacoes/salvar			controllers.Orientacoes.salvar()
+
+GET		/orientandos/:id/excluir	controllers.Orientacoes.excluir(id: Long)
+GET		/orientacoes/:id/excluir	controllers.Orientacoes.excluir(id: Long)
+
 
 GET		/acessar					controllers.Login.acessar()
 GET		/registrar					controllers.Login.registrar()

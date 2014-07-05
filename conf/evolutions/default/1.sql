@@ -5,9 +5,16 @@
 
 create table orientacoes (
   id                        bigint auto_increment not null,
-  descricao                 varchar(30),
+  descricao                 varchar(80),
   observacao                varchar(1000),
   constraint pk_orientacoes primary key (id))
+;
+
+create table orientandos (
+  id                        bigint auto_increment not null,
+  nome                      varchar(60),
+  email                     varchar(100),
+  constraint pk_orientandos primary key (id))
 ;
 
 create table usuario (
@@ -26,6 +33,8 @@ create table usuario (
 SET FOREIGN_KEY_CHECKS=0;
 
 drop table orientacoes;
+
+drop table orientandos;
 
 drop table usuario;
 

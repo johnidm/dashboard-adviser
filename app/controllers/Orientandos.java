@@ -12,6 +12,7 @@ public class Orientandos extends Controller {
     private static final Form<models.Orientandos> formulario = Form.form(models.Orientandos.class);
 
 	public static Result index() {
+		
         List<models.Orientandos> orientandos = models.Orientandos.pesquisa.where()
                 .orderBy("nome").findList();
 

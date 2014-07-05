@@ -37,6 +37,7 @@ public class Login extends Controller {
 		User user = new User();
 
 		if (!user.check(email, password)) {
+			
 			DynamicForm errorForm = formLogin.fill(request.data());
 			errorForm.reject("O usuario ou senha informados nao existem!");
 			

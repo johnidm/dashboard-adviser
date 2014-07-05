@@ -2,10 +2,60 @@
 
 @base(title) {
 
+@if(flash.containsKey("gravou")) {
+	<div class="alert alert-warning alert-dismissable">
+  		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  		<strong>Gravado!</strong> @flash.get("gravou")
+	</div>
+}
+
+@if(flash.containsKey("excluiu")) {	
+	<div class="alert alert-warning alert-dismissable">
+  		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  		<strong>Excluído!</strong> @flash.get("excluiu")
+	</div>	
+}
+
+
 <div class="row">
 	<div class="row">
-		<div class="col-md-6">@level1</div>
-		<div class="col-md-6">@level2</div>
+		<div class="col-md-6">
+
+			<div class="container">
+
+				<div id="loginbox" class="mainbox col-lg-4">
+					<div class="panel">
+					
+						<div class="panel-heading">
+							<div class="panel-title">@title</div>
+						</div>
+
+						<div style="padding-top: 30px" class="panel-body">							
+							@level1
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-md-6">
+		
+		<div class="container">
+
+				<div id="loginbox" class="mainbox col-lg-4">
+					<div class="panel">
+					
+						<div class="panel-heading">
+							<div class="panel-title">Cadastrados</div>
+						</div>
+
+						<div style="padding-top: 30px" class="panel-body">							
+							@level2
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 

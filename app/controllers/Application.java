@@ -9,7 +9,7 @@ import play.mvc.Security;
 //
 public class Application extends Controller {
 
-	@Security.Authenticated(Seguranca.class)	
+	//@Security.Authenticated(Seguranca.class)	
     public static Result index() {
     	return ok(views.html.index.render());
     }
